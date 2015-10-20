@@ -1,0 +1,37 @@
+{
+	"name": "jinx-console",
+	"version": "1.0.0",
+	"description": "Jinx module enable browser console object from as3",
+	"license": "MIT",
+	"repository": {
+		"name": "",
+		"email": "webandrecaetano@gmail.com",
+		"url": "https://github.com/webcaetano/jinx-console"
+	},
+	"author": {
+		"name": "Andre Caetano"
+	},
+	"keywords": [
+		"jinxplugin",
+		"jinxmodule",
+		"module",
+		"plugin",
+		"swf",
+		"swc",
+		"flash",
+		"actionscript",
+		"as3"
+	],
+	"dependencies": {},
+	"files": [
+		"index.jinx"
+	],
+	"scripts": {
+		"test": "gulp test"
+	},
+	"devDependencies": {
+	},
+	"engines": {
+		"node": ">=0.10.0"
+	}
+}

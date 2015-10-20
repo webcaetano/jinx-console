@@ -1,0 +1,40 @@
+/**
+Author : Andre Caetano 2015
+Jinx Module
+**/
+import flash.external.ExternalInterface;
+
+var consoleFuncs = [
+	'assert',
+	'count',
+	'debug',
+	'dir',
+	'dirxml',
+	'error',
+	'group',
+	'groupCollapsed',
+	'groupEnd',
+	'info',
+	'log',
+	'profile',
+	'profileEnd',
+	'table',
+	'time',
+	'timeEnd',
+	'timeStamp',
+	'trace',
+	'warn'
+];
+
+var self = {};
+
+function $trace($){ExternalInterface.call("console.log",$);}
+
+consoleFuncs.map(function(func,k){
+	self[func]=function(){
+		ExternalInterface.call.apply(null,["console."+func].concat(arguments.splice(0,1)));
+	};
+})
+
+
+module.exports = self;
