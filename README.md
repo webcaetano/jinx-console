@@ -10,7 +10,7 @@ npm install jinx-console
 
 ### ScreenShot
 
-![jinx-console](http://i.imgur.com/Qzcz8tm.jpg)
+![jinx-console](http://i.imgur.com/DdARTRu.jpg)
 
 ---------------------------------
 
